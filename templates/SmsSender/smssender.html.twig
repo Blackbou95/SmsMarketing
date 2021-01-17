@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+{% block title %}
+   Sms Sender false
+{% endblock %}
+
+{% block body %}
+<h2>Bienvenue dans le Systeme de SmS Marketing #SMS_SENDER</h2>
+<div class="container" id="container">
+
+	<div class="form-container menu-in-container">
+		<form action="#">
+		   <p>Menu :</p>
+		   <ul>
+		    <li class="active"><a>SMS Sender</a></li>
+		    <li><a href="{{ path('contact') }}">List Contact</a></li>
+		    <li><a href="{{ path('newcontact') }}">Add Contact</a></li>
+		    <li><a>Add List Contact</a></li>
+		    <li><a>Account</a></li>
+		    <li><a>Programme Sms</a></li>
+		    <li><a>Reglages</a></li>
+		    <li><a href="{{ path('home') }}">Log Out</a></li>
+		   </ul>
+
+		</form>
+	</div>
+	<div class="optionMenu-container">
+		<div class="overlayOptionMenu">
+			<div class="overlay-panel overlay-right">
+				<h1>Bluk Sms</h1>
+				<p>Envoyer un SmS à tous les contactes</p>
+				<textarea name="smsAsend" row="5">Enter text here...
+                </textarea>
+                <br>
+				<button class="ghost" id="signUp">Envoyer</button>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}
+

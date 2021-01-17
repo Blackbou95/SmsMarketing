@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="css/style.css" rel="stylesheet">
+        <meta charset="UTF-8">
+
+        <title>{% block title %}SMS MARKETING{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+    </head>
+    <body>
+        {% block body %}{% endblock %}
+
+        {% block javascripts %}
+          <script src="js/script.js"></script>
+           <script src="https://kit.fontawesome.com/7b5d08b329.js" crossorigin="anonymous"></script>
+        {% endblock %}
+
+        {% block footer %}
+        <footer>
+        	<p>
+        		Created with <i class="fa fa-heart"></i> by
+        		<a target="_blank" href="https://ibrahima-ba-anne.sen-init.com">Ibrahima ba anne</a>
+        		</p>
+        </footer>
+        {% endblock %}
+    </body>
+</html>

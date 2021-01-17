@@ -1,0 +1,46 @@
+{% extends 'base.html.twig' %}
+{% block title %}
+   New Contact
+{% endblock %}
+
+{% block body %}
+<h2>Bienvenue dans le Systeme de SmS Marketing #New_Contact</h2>
+<div class="container" id="container">
+
+	<div class="form-container menu-in-container">
+		<form action="#">
+		   <p>Menu :</p>
+		   <ul>
+		    <li><a href="{{ path('sms') }}">SMS Sender</a></li>
+		    <li ><a href="{{ path('contact') }}" >List Contact</a></li>
+		    <li class="active"><a href="{{ path('newcontact') }}">Add Contact</a></li>
+		    <li><a>Add List Contact</a></li>
+		    <li><a>Account</a></li>
+		    <li><a>Programme Sms</a></li>
+		    <li><a>Reglages</a></li>
+		    <li><a href="{{ path('home') }}">Log Out</a></li>
+		   </ul>
+
+		</form>
+	</div>
+	<div class="optionMenu-container">
+		<div class="overlayOptionMenu">
+			<div class="overlay-panel overlay-right">
+                			<h1>Add new</h1>
+				<div class="form-container" style="width:100%;">
+                		<form action="#" method="post">
+                		    <a href="#">Ajouter un nouveau contact</a>
+                			<input type="text" name="prenom" placeholder="first name" />
+                			<input type="text" name="nom" placeholder="last name" />
+                			<input type="text" name="phone" placeholder="77 756 41 04" />
+                			<input type="date" placeholder="birth" />
+
+                			<button>Add new</button>
+                		</form>
+                	</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}
+
